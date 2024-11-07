@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="./styles.css" />
 
     <script src="script.js" defer></script>
@@ -13,207 +20,165 @@
   <body>
     <!-- site container -->
     <section class="siteContainer">
-      <section class="contentContainer">
-        <section class="landing">
-          <header>
-            <div class="iconContainer">
-              <h1>J</h1>
-              <h1>J</h1>
-            </div>
-            <nav>
-              <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#skillsSection">Skills</a></li>
-                <li><a href="#projectsSection">Projects</a></li>
-              </ul>
-            </nav>
-          </header>
-
-          <div class="landingContent">
-            <h1>
-              Joshua Hankins <br />
-              <span>Frontend Developer</span>
-            </h1>
-            <button class="mainBtn">Get Started</button>
+      <!-- <section class="contentContainer"> -->
+      <section class="landing maxWidthContainer" id="landing">
+        <header>
+          <div class="iconContainer">
+            <h1>J</h1>
+            <h1>J</h1>
           </div>
-        </section>
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25px"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
+          </svg>
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="#skillsSection">Skills</a></li>
+              <li><a href="#projectsSection">Projects</a></li>
+              <!-- put file path of pdf in href -->
+              <li><a href="" rel="noreferrer" target="_blank"> Resume </a></li>
+            </ul>
+          </nav>
+        </header>
 
-        <section class="projectsSection pageSection" id="projectsSection">
-          <h2>Projects</h2>
-
-          <div class="projectsContainer hidden" data-projectstype="websites">
-            <div class="projectContainer">
-              <!-- give container -->
-              <!-- <div class="projectImageContainer"> -->
-
-              <div class="image">image</div>
-              <!-- </div> -->
-
-              <div class="projectInfo">
-                <h3>Portfolio Website</h3>
-
-                <ul>
-                  <li>
-                    Users can create grocery lists with items that are provided
-                    or users can create custom items
-                  </li>
-                  <li>
-                    Lists can be updated with more items, can be saved and can
-                    be deleted
-                  </li>
-                  <li>All data is stored and persisted using Core Data</li>
-                </ul>
-
-                <div class="projectBtnsContainer">
-                  <a class="mainBtn" target="_blank">Site Link</a>
-                  <a href=""><span>Source Code</span></a>
-                </div>
-              </div>
-
-              <div class="additionalInfo">
-                <div class="infoSection">
-                  <h4>More Features</h4>
-
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Porro, nobis commodi. Dolore quis incidunt voluptatum!
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae earum veniam odit.
-                    </li>
-                  </ul>
-                </div>
-
-                <hr />
-
-                <div class="infoSection">
-                  <h4>Technology Used</h4>
-                  <p>HTML, CSS, JavaScript</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- add hidden back after -->
-          <div class="projectsContainer" data-projectstype="web-apps">
-            <div class="projectContainer">
-              <!-- give container -->
-              <!-- <div class="projectImageContainer"> -->
-
-              <div class="image">image</div>
-              <!-- </div> -->
-
-              <div class="projectInfo">
-                <h3>Calendar</h3>
-
-                <ul>
-                  <li>
-                    Users can add custom events to their calendar for any day
-                    and all events can be updated and deleted
-                  </li>
-                  <li>
-                    <!-- figure out which db is being used in firebase -->
-                    Users are authenticated using Firebase Authentication and
-                    all data is persisted using a Firestore Database
-                  </li>
-                </ul>
-
-                <div class="projectBtnsContainer">
-                  <a class="mainBtn" target="_blank">Site Link</a>
-                  <a href=""><span>Source Code</span></a>
-                </div>
-              </div>
-
-              <div class="additionalInfo">
-                <div class="infoSection">
-                  <h4>More Features</h4>
-
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Porro, nobis commodi. Dolore quis incidunt voluptatum!
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae earum veniam odit.
-                    </li>
-                  </ul>
-                </div>
-
-                <hr />
-
-                <div class="infoSection">
-                  <h4>Technology Used</h4>
-                  <p>React, Redux Toolkit, Firebase</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="projectContainer">
-              <!-- give container -->
-              <div class="projectImageContainer">
-                <div class="image">image</div>
-              </div>
-
-              <div class="projectInfo">
-                <h3>Grocery List App</h3>
-
-                <ul>
-                  <li>
-                    Users can create grocery lists with items that are provided
-                    or users can create custom items
-                  </li>
-                  <li>
-                    Lists can be updated with more items, can be saved and can
-                    be deleted
-                  </li>
-                  <li>All data is stored and persisted using Core Data</li>
-                </ul>
-
-                <div class="projectBtnsContainer">
-                  <a class="mainBtn" target="_blank">App Store</a>
-                  <a href=""><span>Source Code</span></a>
-                </div>
-              </div>
-
-              <div class="additionalInfo">
-                <div class="infoSection">
-                  <h4>More Features</h4>
-
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Porro, nobis commodi. Dolore quis incidunt voluptatum!
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae earum veniam odit.
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <hr> -->
-
-                <div class="infoSection">
-                  <h4>Technology Used</h4>
-                  <p>SwiftUI, Swift, Core Data</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div class="landingContent maxWidthContainer">
+          <h1>
+            Joshua Hankins <br />
+            <span>iOS Developer</span>
+          </h1>
+          <a class="mainBtn" href="#skillsSection">Get Started</a>
+        </div>
       </section>
+
+      <section
+        class="skillsSection pageSection maxWidthContainer"
+        id="skillsSection"
+      >
+        <h2>Skills</h2>
+
+        <div class="skillsContainer">
+          <h3>Proficient with:</h3>
+          <div class="skillIconsContainer">
+            <div class="skillIcon">
+              <i class="devicon-swift-plain colored"></i>
+
+              <p>Swift</p>
+            </div>
+            <div class="skillIcon">
+              <i class="devicon-swift-plain colored swiftui"></i>
+
+              <p>SwiftUI</p>
+            </div>
+            <div class="skillIcon">
+              <i class="devicon-swift-plain colored"></i>
+
+              <p>Core Data</p>
+            </div>
+            <div class="skillIcon">
+              <i class="devicon-firebase-plain colored"></i>
+
+              <p>Firebase</p>
+            </div>
+            <div class="skillIcon">
+              <i class="devicon-git-plain colored"></i>
+
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skillsContainer">
+          <h3>Experience with:</h3>
+          <div class="skillIconsContainer">
+            <div class="skillIcon">
+              <i class="devicon-swift-plain colored"></i>
+
+              <p>UIKit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="projectsSection pageSection maxWidthContainer"
+        id="projectsSection"
+      >
+        <h2>Projects</h2>
+
+        <!-- add hidden back after -->
+        <div class="projectsContainer" data-projectstype="web-apps">
+          <div class="projectContainer">
+            <!-- give container -->
+            <div class="projectImageContainer">
+              <!-- <div class="image">image</div> -->
+              <img src="./images/GroceryHome.png" alt="grocery" />
+            </div>
+
+            <div class="projectInfo">
+              <h3>Grocery List App</h3>
+
+              <ul>
+                <li>
+                  Users can create grocery lists with items that are provided or
+                  users can create custom items
+                </li>
+                <li>
+                  Lists can be updated with more items, can be saved and can be
+                  deleted
+                </li>
+                <li>All data is stored and persisted using Core Data</li>
+              </ul>
+
+              <div class="infoSection">
+                <h4>Technology Used</h4>
+                <p>SwiftUI, Swift, Core Data</p>
+              </div>
+
+              <div class="projectBtnsContainer">
+                <!-- <a class="mainBtn" target="_blank">App Store</a> -->
+                <a
+                  class="mainBtn"
+                  href="https://github.com/jhank12/GroceryList/tree/main"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="maxWidthContainer">
+          <nav>
+            <ul>
+              <li><a href="#landing">Home</a></li>
+              <li><a href="#skillsSection">Skills</a></li>
+              <li><a href="#projectsSection">Projects</a></li>
+              <!-- put file path of pdf in href -->
+              <li><a href="" rel="noreferrer" target="_blank"> Resume </a></li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="https://github.com/jhank12" target="_blank">Github</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/joshuaahankins/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- </section> -->
     </section>
   </body>
 </html>
