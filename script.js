@@ -1,33 +1,13 @@
+const hamburgerIcon = document.querySelector("#landing svg");
+const mobileNav = document.querySelector(".mobileNav");
+const links = document.querySelector(".mobileNav ul");
 
+hamburgerIcon.addEventListener("click", function (e) {
+  mobileNav.classList.remove("hidden");
+});
 
-const projectOptionsContainer = document.querySelector(".projectTypeOptions")
-const projectOptions = document.querySelectorAll(".projectTypeOption");
-
-const projectSections = document.querySelectorAll(".projectsContainer");
-
-projectOptionsContainer.addEventListener("click", function(e) {
-
-    const projectOption = e.target.closest(".projectTypeOption");
-
-    if (projectOption === null) return
-
-    resetChecked()
-    projectOption.classList.add("projectTypeChecked");
-
-    projectSections.forEach(section => {
-        console.log(section)
-        section.classList.add("hidden");
-
-        if (section.dataset.projectstype === projectOption.dataset.btnoption) {
-            section.classList.remove("hidden")
-        } 
-    })
-
-})
-
-function resetChecked() {
-    projectOptions.forEach(option => {
-
-        option.classList.remove("projectTypeChecked");
-    })
-}
+links.addEventListener("click", function (e) {
+  setTimeout(() => {
+    mobileNav.classList.add("hidden");
+  }, 500);
+});
